@@ -1,0 +1,95 @@
+body {
+    background-image: url(Imagenes/fondo.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.foto {
+    background-color: solid transparent;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-image: url(Imagenes/messi.jpeg);
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+}
+
+h1 {
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    top: 220px;
+    left: 785px;
+}
+
+h2 {
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    top: 250px;
+    left: 755px;
+}
+
+.icons {
+    position: absolute;
+    top: 290px;
+    left: 765px;
+}
+
+.icono {
+    height: 40px;
+    width: 50px;
+}
+
+.boton {
+    background-color: gray;
+    height: 50px;
+    width: 500px;
+    margin: 0 auto 10px;
+    border-radius: 25px;
+    position: relative;
+    top: 350px;
+    transition: transform 0.15s cubic-bezier(0.17, 0.67, 0.29, 2.71) 0s;
+}
+
+.boton:hover {
+    background-color: rgb(147, 147, 147);
+    transform: translateX(-2px) scale(1.04);
+}
+
+.img-boton {
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 41px;
+    height: 41px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.link-boton {
+    position: relative; 
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif; 
+}
