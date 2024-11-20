@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> <!--Sigo teniendo problemas con el responsive-->
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"><a class="link1" href="">Julian Egea</a></div>
+    <div class="div4">
+        <h1>Blog de Tecnología</h1>
+        <p class="p1">Innovación, tendencias digitales y lo que viene</p>
+    </div>
+    
+    <form>
+        <input class="busqueda" type="text"> 
+    </form>
+
+    <ol class="listaimg">
+        <img class="img1" src="../Imagenes/ia.jpeg" alt="">
+        <img class="img1" src="../Imagenes/RV.webp" alt="">
+        <img class="img1" src="../Imagenes/blockchain.webp" alt="">
+        <img class="img2" src="../Imagenes/Ciberseguridad.png" alt="">
+    </ol>
+    <div class="divlista">
+        <ol class="lista">
+            <a class="links1" href="#IA">IA</a>
+            <a class="links1" href="#RV">RV</a>
+            <a class="links1" href="#BC">BC</a>
+            <a class="links1" href="#CS">CS</a>
+        </ol>
+    </div>
+
+    <ol class="lista2">
+        <a class="links5" href="#IA">IA</a>
+        <a class="links5" href="#RV">RV</a>
+        <a class="links5" href="#BC">BC</a>
+        <a class="links5" href="#CS">CS</a>
+        <a class="links5" href="#CC">CC</a>
+    </ol>
+
+    <div class="div5">
+        <div>
+            <h2 class="subtitulo" id="IA"><a href="IA.html">La Inteligencia Artificial</a></h2>
+            <img class="imgia" src="../Imagenes/ia.jpeg" alt="">
+            <div class="texto1"><p class="post-content">
+                En 2024, las mejoras en los algoritmos <br>
+                de IA han permitido avances en áreas <br>
+                como la salud, la educación y el comercio.</p>
+            </div>
+            <a class="linkia" href="IA.html">Mas info</a>
+        </div>
+        <div>
+            <h2 class="subtitulo2" id="RV"><a href="RV.html">La Realidad Virtual</a></h2>
+            <img class="imgrv" src="../Imagenes/RV.webp" alt="">
+            <div class="texto2"><p class="post-content">
+                La realidad virtual (RV) ya no es solo para los videojuegos. <br>
+                Hoy en día, se está utilizando para entrenar a <br>
+                profesionales en medicina, ingeniería y otras disciplinas.</p>
+            </div>
+            <a class="linkrv" href="RV.html">Mas info</a>
+        </div>
+        <div>
+            <h2 class="subtitulo3" id="BC"><a href="Blockchain.html">Blockchain</a></h2>
+            <img class="imgblo" src="../Imagenes/blockchain.webp" alt="">
+            <div class="texto3"><p class="post-content">
+                Su capacidad para proporcionar una mayor transparencia <br>
+                y seguridad en las transacciones está haciendo <br>
+                que más empresas se interesen en adoptarlo.</p>
+            </div>
+            <a class="linkblo" href="Blockchain.html">Mas info</a>
+        </div>
+        <div>
+            <h2 class="subtitulo4" id="CS"><a href="Ciberseguridad.html">Ciberseguridad</a></h2>
+            <img class="imgcib" src="../Imagenes/Ciberseguridad.png" alt="">
+            <div class="texto4"><p class="post-content">
+                Con el aumento de dispositivos conectados y <br>
+                la creciente digitalización, la ciberseguridad se ha <br>
+                vuelto esencial.</p>
+            </div>
+            <a class="linkcib" href="Ciberseguridad.html">Mas info</a>
+        </div>
+        <div>
+            <h2 class="subtitulo5" id="CC"><a href="CC.html">El Futuro de la Computación Cuántica</a></h2>
+            <img class="imgcc" src="../Imagenes/computacioncuantica.jpeg" alt="">
+            <div class="texto5"><p class="post-content">
+                La computación cuántica promete revolucionar la tecnología <br>
+                con su capacidad para resolver problemas complejos <br>
+                mucho más rápido que las computadoras tradicionales. </p>
+            </div>
+            <a class="linkcc" href="CC.html">Mas info</a>
+        </div>
+
+        <div class="autor">
+            <div class="autorimg">
+                <img src="../Imagenes/foto_mia.jpeg" alt="Foto del autor">
+            </div>
+            <h2>Sobre el autor</h2>
+            <p>
+                Mi nombre es Julian Egea, tengo 19 años. Estudio en UADE la carrera de Licenciatura en Gestión de Tecnología de la Información, me gusta mucho la tecnologia. 
+            </p>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
